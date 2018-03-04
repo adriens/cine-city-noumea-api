@@ -2,3 +2,10 @@
 
 # cine-city-noumea-api
 API REST pour interagir avec http://www.cinecity.nc
+
+# Endpoints
+
+- `/today` : films du jour
+- `/contact` : donées de contact du cinéma
+- `/bests` : les 20 meilleurs films notés car ce cinéma
+- `/worsts` : les 20 pires films notés car ce cinéma
