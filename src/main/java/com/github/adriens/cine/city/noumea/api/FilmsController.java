@@ -10,7 +10,9 @@ import com.github.adriens.cine.city.noumea.sdk.Film;
 import com.github.adriens.cine.city.noumea.sdk.FilmsWrapper;
 import java.io.IOException;
 import java.util.ArrayList;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -42,5 +44,15 @@ public class FilmsController {
         CinemaContact contact = new CinemaContact();
         return contact;
     }
+    
+    @RequestMapping(value = "/film/{filmid}")
+    public String filmDetails(
+            @PathVariable("filmid")  int filmid) throws IOException {
+        //CinemaContact contact = new CinemaContact();
+        System.out.println("Gof movie : <" + filmid + ">");
+        return "Gof movie : <" + filmid + ">";
+    }
+    
+    
     
 }
