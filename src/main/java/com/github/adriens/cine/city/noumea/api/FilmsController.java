@@ -7,6 +7,7 @@ package com.github.adriens.cine.city.noumea.api;
 
 import com.github.adriens.cine.city.noumea.sdk.CinemaContact;
 import com.github.adriens.cine.city.noumea.sdk.Film;
+import com.github.adriens.cine.city.noumea.sdk.FilmDetails;
 import com.github.adriens.cine.city.noumea.sdk.FilmsWrapper;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -46,11 +47,13 @@ public class FilmsController {
     }
     
     @RequestMapping(value = "/film/{filmid}")
-    public String filmDetails(
+    public FilmDetails filmDetails(
             @PathVariable("filmid")  int filmid) throws IOException {
         //CinemaContact contact = new CinemaContact();
         System.out.println("Gof movie : <" + filmid + ">");
-        return "Gof movie : <" + filmid + ">";
+        FilmsWrapper wrap = new FilmsWrapper();
+        return wrap.getDetailsOfFilm(filmid);
+        //return "Gof movie : <" + filmid + ">";
     }
     
     
