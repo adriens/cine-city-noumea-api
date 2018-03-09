@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.adriens.open.data</groupId>
     <artifactId>cine-city-noumea-api</artifactId>
-    <version>1.0</version>
+    <version>1.3</version>
     <packaging>jar</packaging>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -11,7 +11,7 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         
         <!-- deps versions -->
-        <cine-city-noumea-sdk.version>1.14</cine-city-noumea-sdk.version>
+        <cine-city-noumea-sdk.version>1.17</cine-city-noumea-sdk.version>
     </properties>
     
     <repositories>
