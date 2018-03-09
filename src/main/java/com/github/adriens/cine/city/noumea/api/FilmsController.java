@@ -42,13 +42,13 @@ public class FilmsController {
     @RequestMapping("/bests")
     public ArrayList<Film> bests() throws IOException {
         FilmsWrapper wrapper = new FilmsWrapper();
-        return wrapper.getTop20();
+        return wrapper.getTop(FilmsWrapper.FilmRankingCategory.BEST, 5, false);
     }
 
     @RequestMapping("/worsts")
     public ArrayList<Film> worsts() throws IOException {
         FilmsWrapper wrapper = new FilmsWrapper();
-        return wrapper.getWorsts20();
+        return wrapper.getTop(FilmsWrapper.FilmRankingCategory.WORST, 5, false);
     }
 
     @RequestMapping("/contact")
