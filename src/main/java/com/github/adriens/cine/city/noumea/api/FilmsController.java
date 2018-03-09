@@ -7,10 +7,15 @@ package com.github.adriens.cine.city.noumea.api;
 
 import com.github.adriens.cine.city.noumea.sdk.CinemaContact;
 import com.github.adriens.cine.city.noumea.sdk.Film;
+import com.github.adriens.cine.city.noumea.sdk.FilmDetails;
 import com.github.adriens.cine.city.noumea.sdk.FilmsWrapper;
 import java.io.IOException;
 import java.util.ArrayList;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -19,6 +24,8 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 public class FilmsController {
+    
+    final static Logger logger = LoggerFactory.getLogger(FilmsController.class);
     
     @RequestMapping("/today")
     public ArrayList<Film> today() throws IOException {
@@ -34,7 +41,7 @@ public class FilmsController {
     @RequestMapping("/worsts")
     public ArrayList<Film> worsts() throws IOException {
         FilmsWrapper wrapper = new FilmsWrapper();
-        return wrapper.getWorst20();
+        return wrapper.getWorsts20();
     }
     
     @RequestMapping("/contact")
@@ -43,4 +50,12 @@ public class FilmsController {
         return contact;
     }
     
+    @RequestMapping(value = "/film/{filmid}")
+    public FilmDetails filmDetails(
+            @PathVariable("filmid")  int filmid) throws IOException {
+        //CinemaContact contact = new CinemaContact();
+        logger.info("Got movie id : <" + filmid + ">");
+        FilmsWrapper wrap = new FilmsWrapper();
+        return wrap.getDetailsOfFilm(filmid);
+    }    
 }
