@@ -9,3 +9,5 @@ Développement Spring Boot de l'API REST pour interagir avec http://www.cinecity
 - `/contact` : donées de contact du cinéma
 - `/bests` : les 20 meilleurs films notés car ce cinéma
 - `/worsts` : les 20 pires films notés car ce cinéma
+- `/film/{filmId}` : les détails du film dont le num Cinecity est {filmId}
+
