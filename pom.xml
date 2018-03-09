@@ -11,7 +11,7 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         
         <!-- deps versions -->
-        <cine-city-noumea-sdk.version>1.17</cine-city-noumea-sdk.version>
+        <cine-city-noumea-sdk.version>1.19</cine-city-noumea-sdk.version>
     </properties>
     
     <repositories>
