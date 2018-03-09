@@ -37,7 +37,7 @@ public class FilmsController {
     @RequestMapping("/worsts")
     public ArrayList<Film> worsts() throws IOException {
         FilmsWrapper wrapper = new FilmsWrapper();
-        return wrapper.getWorst20();
+        return wrapper.getWorsts20();
     }
     
     @RequestMapping("/contact")
