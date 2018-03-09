@@ -44,10 +44,7 @@
 	    <groupId>com.github.adriens</groupId>
 	    <artifactId>cine-city-noumea-sdk</artifactId>
 	    <version>${cine-city-noumea-sdk.version}</version>
-	</dependency>
-
-        
-        
+	</dependency>        
     </dependencies>
     
     <build>
