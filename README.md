@@ -3,6 +3,8 @@
 # cine-city-noumea-api
 
 Implémentation rapide en Spring Boot 2.0 de l'API REST pour interagir avec http://www.cinecity.nc.
+L'API utilise une SDK qui webcrawl le site du cinema. Voir https://github.com/adriens/cine-city-noumea-sdk pour utiliser
+le JDK à d'autres fins.
 
 
 # Endpoints
