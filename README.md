@@ -28,6 +28,6 @@ https://cine-city-nc.herokuapp.com/worsts
 https://cine-city-nc.herokuapp.com/film/{filmId}
 ```
 
-Par exemple pour ```LA CH'TITE FAMILLE```` :
+Par exemple pour ```LA CH'TITE FAMILLE``` :
 
 https://cine-city-nc.herokuapp.com/film/50228
