@@ -15,3 +15,19 @@ le JDK à d'autres fins.
 - `/worsts` : les 5 pires films notés par ce cinéma
 - `/film/{filmId}` : (tous) les détails du film dont le num Cinecity est {filmId}
 
+# Heroku
+
+Le service est déployé en mode free sur [Heroku](), les urls sont les suivantes :
+
+```
+https://cine-city-nc.herokuapp.com/
+https://cine-city-nc.herokuapp.com/today
+https://cine-city-nc.herokuapp.com/contact
+https://cine-city-nc.herokuapp.com/bests
+https://cine-city-nc.herokuapp.com/worsts
+https://cine-city-nc.herokuapp.com/film/{filmId}
+```
+
+Par exemple pour ```LA CH'TITE FAMILLE```` :
+
+https://cine-city-nc.herokuapp.com/film/50228
