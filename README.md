@@ -9,7 +9,7 @@ Implémentation rapide en Spring Boot 2.0 de l'API REST pour interagir avec http
 
 - `/` ou `/today` : films du jour
 - `/contact` : donées de contact du cinéma
-- `/bests` : les 20 meilleurs films notés par ce cinéma
-- `/worsts` : les 20 pires films notés par ce cinéma
+- `/bests` : les 5 meilleurs films notés par ce cinéma
+- `/worsts` : les 5 pires films notés par ce cinéma
 - `/film/{filmId}` : les détails du film dont le num Cinecity est {filmId}
 
