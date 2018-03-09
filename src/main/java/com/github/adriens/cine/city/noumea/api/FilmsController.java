@@ -27,7 +27,8 @@ public class FilmsController {
     
     final static Logger logger = LoggerFactory.getLogger(FilmsController.class);
     
-    @RequestMapping("/today")
+    @RequestMapping(
+            value={"/", "/today"})
     public ArrayList<Film> today() throws IOException {
         FilmsWrapper wrapper = new FilmsWrapper();
         return wrapper.getFilmsDuJour();

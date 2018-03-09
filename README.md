@@ -5,7 +5,7 @@ Développement Spring Boot de l'API REST pour interagir avec http://www.cinecity
 
 # Endpoints
 
-- `/today` : films du jour
+- `/` ou `/today` : films du jour
 - `/contact` : donées de contact du cinéma
 - `/bests` : les 20 meilleurs films notés car ce cinéma
 - `/worsts` : les 20 pires films notés car ce cinéma
