@@ -28,6 +28,6 @@ https://cine-city-nc.herokuapp.com/worsts
 https://cine-city-nc.herokuapp.com/film/{filmId}
 ```
 
-Uxemple ci-dessous :
+Exemple ci-dessous :
 
 https://cine-city-nc.herokuapp.com/film/50218
