@@ -20,6 +20,14 @@ le JDK à d'autres fins.
 
 Le service est déployé en mode free sur [Heroku](), les urls sont les suivantes :
 
+# Postman
+
+La doc est disponible [ici](https://documenter.getpostman.com/view/3489712/cine-city/RVnVELRt) en mode html, ou directement intégrable à votre Postman via le bouton : 
+
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/d9f11ac6cb58a7770144)
+
+# Exemples d'appels
+
 ```
 https://cine-city-nc.herokuapp.com/
 https://cine-city-nc.herokuapp.com/today
